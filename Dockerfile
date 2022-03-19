@@ -3,6 +3,7 @@ FROM debian:bullseye-slim
 RUN set -eux \
     && apt-get update -qyy \
     && apt-get install -qyy --no-install-recommends --no-install-suggests \
+        netbase \
         ca-certificates \
         iproute2 \
         libcap2 \
